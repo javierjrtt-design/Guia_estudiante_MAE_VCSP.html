@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAE 2026: Guía Visual Completa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700;800&family=Noto+Serif:italic,wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --azul-ib: #2C4870;
+            --verde-ib: #1E5A54;
+            --amarillo-ib: #F4CA52;
+            --rojo-ib: #E53E3E;
+            --fondo: #F0F4F8;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: var(--fondo);
+            color: #1a202c;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--azul-ib) 0%, #1a365d 100%);
+            border-bottom: 6px solid var(--amarillo-ib);
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            color: var(--azul-ib);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .topic-icon {
+            font-size: 1.5rem;
+            background: #edf2f7;
+            padding: 8px;
+            border-radius: 12px;
+            display: inline-block;
+        }
+
+        .badge-time {
+            background: var(--verde-ib);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 9999px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        .math-bubble {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .casio-zone {
+            background: linear-gradient(135deg, #1F584C 0%, #2D3748 100%);
+            color: white;
+        }
+
+        .exam-tag {
+            font-size: 0.65rem;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .command-term {
+            border-left: 3px solid var(--amarillo-ib);
+            padding-left: 8px;
+        }
+
+        footer {
+            background: var(--azul-ib);
+            border-top: 4px solid var(--amarillo-ib);
+        }
+    </style>
+</head>
+<body class="p-0 m-0">
+
+    <!-- HEADER PRINCIPAL -->
+    <header class="hero-gradient text-white py-10 px-6 text-center relative overflow-hidden">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <h1 class="text-4xl md:text-5xl font-black mb-2 tracking-tighter uppercase">Matemáticas MAE NM 📐</h1>
+            <p class="text-xl opacity-90 font-light italic mb-6">"Análisis y Enfoques: El Arte de la Abstracción"</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-bold border border-white/30">🗓️ Guía 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-bold border border-white/30">🎓 Diploma IB</span>
+                <span class="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full text-sm font-black">👨‍🏫 Javier Trigoso</span>
+            </div>
+        </div>
+        <div class="absolute top-0 right-0 opacity-10 text-9xl transform translate-x-10 -translate-y-10">∫</div>
+        <div class="absolute bottom-0 left-0 opacity-10 text-9xl transform -translate-x-10 translate-y-10">∑</div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- NATURALEZA DEL CURSO -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <h2 class="section-header text-2xl">
+                    <span class="topic-icon">🌿</span> Naturaleza del Curso
+                </h2>
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <p class="text-sm leading-relaxed text-gray-700">
+                        Este curso está diseñado para estudiantes que disfrutan de las matemáticas como una disciplina en sí misma. Se enfoca en la <strong>generalización</strong>, la <strong>demostración</strong> y el rigor algebraico. 🧠
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="math-bubble">Analítico</span>
+                        <span class="math-bubble">Abstracto</span>
+                        <span class="math-bubble">Riguroso</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="card p-4 text-center">
+                    <span class="text-2xl mb-2 block">🔍</span>
+                    <p class="font-bold text-xs uppercase">Indagación</p>
+                    <p class="text-[10px] text-gray-500 italic">Conjeturar y probar</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl mb-2 block">🌍</span>
+                    <p class="font-bold text-xs uppercase">Modelización</p>
+                    <p class="text-[10px] text-gray-500 italic">Realidad matemática</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl mb-2 block">⚖️</span>
+                    <p class="font-bold text-xs uppercase">Validez</p>
+                    <p class="text-[10px] text-gray-500 italic">Justificación lógica</p>
+                </div>
+                <div class="card p-4 text-center">
+                    <span class="text-2xl mb-2 block">💻</span>
+                    <p class="font-bold text-xs uppercase">Tecnología</p>
+                    <p class="text-[10px] text-gray-500 italic">GDC como aliada</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTRUCTURA TEMÁTICA -->
+        <section>
+            <h2 class="section-header text-2xl mb-8">
+                <span class="topic-icon">🗺️</span> Mapa de Contenidos
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 flex flex-col justify-between">
+                    <div><div class="flex justify-between items-start mb-4"><span class="text-3xl">🔢</span><span class="badge-time">19h</span></div>
+                    <h3 class="font-black text-gray-800 uppercase text-sm mb-2">Tema 1: Número y Álgebra</h3>
+                    <div class="space-y-1 mb-4">
+                        <div class="text-[11px] text-gray-600">🔹 Sucesiones y Series</div>
+                        <div class="text-[11px] text-gray-600">🔹 Logaritmos y Exponentes</div>
+                        <div class="text-[11px] text-gray-600">🔹 Teorema del Binomio</div>
+                    </div></div>
+                    <p class="text-[10px] italic text-blue-600 font-bold border-t pt-2">Patrones y Equivalencias</p>
+                </div>
+
+                <div class="card p-6 flex flex-col justify-between">
+                    <div><div class="flex justify-between items-start mb-4"><span class="text-3xl">📈</span><span class="badge-time">21h</span></div>
+                    <h3 class="font-black text-gray-800 uppercase text-sm mb-2">Tema 2: Funciones</h3>
+                    <div class="space-y-1 mb-4">
+                        <div class="text-[11px] text-gray-600">🔹 Transformaciones</div>
+                        <div class="text-[11px] text-gray-600">🔹 Cuadráticas y Racionales</div>
+                        <div class="text-[11px] text-gray-600">🔹 Modelización Real</div>
+                    </div></div>
+                    <p class="text-[10px] italic text-blue-600 font-bold border-t pt-2">Representar el Cambio</p>
+                </div>
+
+                <div class="card p-6 flex flex-col justify-between">
+                    <div><div class="flex justify-between items-start mb-4"><span class="text-3xl">📐</span><span class="badge-time">25h</span></div>
+                    <h3 class="font-black text-gray-800 uppercase text-sm mb-2">Tema 3: Geometría y Trig.</h3>
+                    <div class="space-y-1 mb-4">
+                        <div class="text-[11px] text-gray-600">🔹 Radianes y Círculo Unitario</div>
+                        <div class="text-[11px] text-gray-600">🔹 Identidades Trigonométricas</div>
+                    </div></div>
+                    <p class="text-[10px] italic text-blue-600 font-bold border-t pt-2">Espacio y Forma</p>
+                </div>
+
+                <div class="card p-6 flex flex-col justify-between">
+                    <div><div class="flex justify-between items-start mb-4"><span class="text-3xl">📊</span><span class="badge-time">27h</span></div>
+                    <h3 class="font-black text-gray-800 uppercase text-sm mb-2">Tema 4: Estadística y Prob.</h3>
+                    <div class="space-y-1 mb-4">
+                        <div class="text-[11px] text-gray-600">🔹 Correlación (r de Pearson)</div>
+                        <div class="text-[11px] text-gray-600">🔹 Distribuciones Proba</div>
+                    </div></div>
+                    <p class="text-[10px] italic text-blue-600 font-bold border-t pt-2">Manejo de la Incertidumbre</p>
+                </div>
+
+                <div class="card p-6 flex flex-col justify-between border-2 border-green-200 shadow-lg">
+                    <div><div class="flex justify-between items-start mb-4"><span class="text-3xl">⚡</span><span class="badge-time">28h</span></div>
+                    <h3 class="font-black text-green-800 uppercase text-sm mb-2">Tema 5: Análisis (Cálculo)</h3>
+                    <div class="space-y-1 mb-4">
+                        <div class="text-[11px] text-gray-600">🔹 Derivación y Optimización</div>
+                        <div class="text-[11px] text-gray-600">🔹 Integración y Áreas</div>
+                    </div></div>
+                    <p class="text-[10px] italic text-green-600 font-bold border-t pt-2">Cuantificar el Movimiento</p>
+                </div>
+
+                <div class="card p-6 bg-yellow-50 border-2 border-yellow-400">
+                    <div class="flex justify-between items-start mb-4"><span class="text-3xl">💎</span><span class="badge-time" style="background: #F6AD55;">30h</span></div>
+                    <h3 class="font-black text-yellow-800 uppercase text-sm mb-2">Exploración (IA)</h3>
+                    <p class="text-[10px] text-gray-700 leading-tight mb-4">Tu investigación personal de 6-12 páginas sobre un tema de tu interés.</p>
+                    <div class="text-[9px] bg-white p-2 rounded border border-yellow-200 font-bold uppercase text-center text-yellow-700">20% de la Nota Final</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMANDOS DE EXAMEN -->
+        <section class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+            <h2 class="section-header text-xl mb-6">
+                <span class="topic-icon">🔑</span> Glosario de Examen (Command Terms)
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="command-term">
+                    <p class="font-black text-xs text-blue-900 uppercase">Escriba / Anote</p>
+                    <p class="text-[10px] text-gray-500">Obtenga la respuesta sin necesidad de mostrar el procedimiento.</p>
+                </div>
+                <div class="command-term">
+                    <p class="font-black text-xs text-blue-900 uppercase">Halle / Calcule</p>
+                    <p class="text-[10px] text-gray-500">Se espera un resultado numérico. Muestre los pasos principales.</p>
+                </div>
+                <div class="command-term">
+                    <p class="font-black text-xs text-blue-900 uppercase">Demuestre que...</p>
+                    <p class="text-[10px] text-gray-500">Se da la respuesta final; debe mostrarse el proceso lógico para llegar a ella.</p>
+                </div>
+                <div class="command-term">
+                    <p class="font-black text-xs text-blue-900 uppercase">Justifique / Explique</p>
+                    <p class="text-[10px] text-gray-500">Proporcione una razón o argumento para apoyar su respuesta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CRONOGRAMA IA -->
+        <section>
+            <h2 class="section-header text-xl mb-8">
+                <span class="topic-icon">⏳</span> Ruta de la Exploración (IA)
+            </h2>
+            <div class="relative flex flex-col md:flex-row gap-4">
+                <div class="flex-1 bg-white p-4 rounded-xl border-t-4 border-gray-300 text-center">
+                    <span class="text-xs font-bold text-gray-400">FASE 1</span>
+                    <p class="font-black text-xs mb-1 uppercase">Ideación</p>
+                    <p class="text-[9px] text-gray-500">Elige un tema con compromiso personal. No tiene que ser complejo, sino auténtico.</p>
+                </div>
+                <div class="flex-1 bg-white p-4 rounded-xl border-t-4 border-blue-400 text-center">
+                    <span class="text-xs font-bold text-blue-400">FASE 2</span>
+                    <p class="font-black text-xs mb-1 uppercase">Planificación</p>
+                    <p class="text-[9px] text-gray-500">Define tu pregunta de investigación y recolecta los datos necesarios.</p>
+                </div>
+                <div class="flex-1 bg-white p-4 rounded-xl border-t-4 border-yellow-400 text-center">
+                    <span class="text-xs font-bold text-yellow-400">FASE 3</span>
+                    <p class="font-black text-xs mb-1 uppercase">Borrador (Draft)</p>
+                    <p class="text-[9px] text-gray-500">Aplica la matemática y redacta el borrador para recibir feedback inicial.</p>
+                </div>
+                <div class="flex-1 bg-blue-900 p-4 rounded-xl border-t-4 border-green-400 text-center text-white">
+                    <span class="text-xs font-bold text-green-400">FASE 4</span>
+                    <p class="font-black text-xs mb-1 uppercase">Versión Final</p>
+                    <p class="text-[9px] opacity-80">Reflexiona críticamente sobre tus resultados y entrega tu obra maestra.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVALUACIÓN EXTERNA -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card overflow-hidden">
+                <div class="bg-red-600 text-white px-6 py-2 flex justify-between items-center">
+                    <span class="font-black text-sm uppercase">Prueba 1</span>
+                    <span class="exam-tag bg-white text-red-600">Sin Calculadora 🚫</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex gap-4 mb-4">
+                        <div class="flex-1 bg-red-50 p-2 rounded text-center">
+                            <p class="text-[10px] text-red-800 font-bold uppercase">Duración</p>
+                            <p class="text-xl font-black">90 min</p>
+                        </div>
+                        <div class="flex-1 bg-red-50 p-2 rounded text-center">
+                            <p class="text-[10px] text-red-800 font-bold uppercase">Peso</p>
+                            <p class="text-xl font-black">40%</p>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-gray-600 italic">"Pura destreza mental y fluidez algebraica."</p>
+                </div>
+            </div>
+            <div class="card overflow-hidden">
+                <div class="bg-green-600 text-white px-6 py-2 flex justify-between items-center">
+                    <span class="font-black text-sm uppercase">Prueba 2</span>
+                    <span class="exam-tag bg-white text-green-600">Con GDC ⚡</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex gap-4 mb-4">
+                        <div class="flex-1 bg-green-50 p-2 rounded text-center">
+                            <p class="text-[10px] text-green-800 font-bold uppercase">Duración</p>
+                            <p class="text-xl font-black">90 min</p>
+                        </div>
+                        <div class="flex-1 bg-green-50 p-2 rounded text-center">
+                            <p class="text-[10px] text-green-800 font-bold uppercase">Peso</p>
+                            <p class="text-xl font-black">40%</p>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-gray-600 italic">"Modelización y uso estratégico de la tecnología."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENTALIDAD -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 card p-8 bg-blue-50/50">
+                <h3 class="font-black text-gray-800 mb-6 uppercase tracking-wider flex items-center">
+                    <span class="mr-3">🧠</span> Mentalidad MAE
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex gap-4">
+                        <span class="text-xl">💪</span>
+                        <div>
+                            <p class="font-bold text-xs uppercase">Resiliencia</p>
+                            <p class="text-[10px] text-gray-500">Es normal fallar al principio; cada error es una oportunidad de aprendizaje.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-xl">🔄</span>
+                        <div>
+                            <p class="font-bold text-xs uppercase">Consistencia</p>
+                            <p class="text-[10px] text-gray-500">La práctica diaria vence al estudio intensivo de última hora.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-xl">🛌</span>
+                        <div>
+                            <p class="font-bold text-xs uppercase">Bienestar</p>
+                            <p class="text-[10px] text-gray-500">Descansa bien; el cerebro procesa conceptos abstractos durante el sueño.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-xl">⚖️</span>
+                        <div>
+                            <p class="font-bold text-xs uppercase">Honestidad</p>
+                            <p class="text-[10px] text-gray-500">Confía en tus propias ideas para tu IA. La originalidad es clave.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="casio-zone p-8 rounded-3xl flex flex-col justify-center items-center text-center shadow-xl">
+                <span class="text-5xl mb-4">📟</span>
+                <h3 class="font-black text-xl mb-2 uppercase">GDC Casio fx-CG50</h3>
+                <p class="text-[11px] opacity-80 mb-6">Tu herramienta esencial para visualizar lo invisible.</p>
+                <div class="bg-white/20 px-4 py-2 rounded-lg text-[10px] font-bold uppercase tracking-widest border border-white/30">
+                    Úsala sabiamente 🚀
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+            <div>
+                <p class="font-black text-lg mb-1 tracking-tighter">Colegios Villa Caritas & San Pedro</p>
+                <p class="text-[10px] opacity-70 uppercase font-bold tracking-widest">Guía MAE 2026</p>
+            </div>
+            <div class="text-center">
+                <p class="text-sm italic font-serif">"La elegancia está en la lógica." ✨</p>
+            </div>
+            <div class="md:text-right space-y-1">
+                <p class="font-black text-sm uppercase">Javier Trigoso Trigoso</p>
+                <p class="text-[10px] opacity-70">jtrigoso@vc-sp.edu.pe</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
